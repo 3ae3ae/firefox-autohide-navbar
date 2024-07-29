@@ -1,19 +1,21 @@
-# Firefox 주소창 자동 숨김 기능
+# Firefox Auto-hide Navbar Feature
 
-이 userChrome.css 스니펫은 Firefox 브라우저의 주소창과 제목 표시줄을 자동으로 숨기는 기능을 제공합니다. 마우스를 위쪽으로 이동하면 요소들이 나타나고, 마우스를 다른 곳으로 이동하면 자동으로 숨겨집니다.
+ENGLISH | [한국어](README_KO.md)
+
+This userChrome.css snippet provides a feature to automatically hide the address bar and title bar in Firefox browser. The elements appear when you move your mouse to the top, and automatically hide when you move your mouse elsewhere.
 
 ## Features
 
-- 주소창과 제목 표시줄 자동 숨김
-- 마우스 호버 시 요소 표시
-- 부드러운 전환 효과
+- Auto-hide address bar and title bar
+- Show elements on mouse hover
+- Smooth transition effect
 
 ## Installation
 
-1. Firefox의 설정에서 `about:config`를 열고 `toolkit.legacyUserProfileCustomizations.stylesheets`를 `true`로 설정합니다.
-2. Firefox 프로파일 폴더를 찾습니다. (`about:support`에서 "프로파일 폴더" 항목 참조)
-3. 프로파일 폴더 내에 `chrome` 폴더를 생성합니다. (없는 경우)
-4. `chrome` 폴더 안에 `userChrome.css` 파일을 생성하고 다음 코드를 붙여넣습니다:
+1. Open `about:config` in Firefox settings and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+2. Find your Firefox profile folder (refer to "Profile Folder" in `about:support`).
+3. Create a `chrome` folder in the profile folder (if it doesn't exist).
+4. Create a `userChrome.css` file inside the `chrome` folder and paste the following code:
 
 ```css
 #navigator-toolbox:not(:hover) > #titlebar,
@@ -26,17 +28,17 @@
 }
 ```
 
-5. Firefox를 재시작합니다.
+5. Restart Firefox.
 
 ## Customization
 
-- `-36px`의 값을 조절하여 숨김 정도를 변경할 수 있습니다.
-- `0.3s`의 값을 조절하여 전환 속도를 변경할 수 있습니다.
+- Adjust the `-36px` value to change the degree of hiding.
+- Adjust the `0.3s` value to change the transition speed.
 
 ## Caution
 
-이 CSS 스니펫은 Firefox의 최신 버전을 기준으로 작성되었습니다. 향후 Firefox 업데이트로 인해 동작이 변경될 수 있습니다.
+This CSS snippet is based on the latest version of Firefox. Future Firefox updates may affect its functionality.
 
 ## Troubleshooting
 
-주소창이 보이지 않는 경우, 마우스를 브라우저 상단으로 이동하세요. 그래도 문제가 지속된다면 `about:support`에서 "Firefox 새로고침"을 시도해보세요.
+If the address bar is not visible, move your mouse to the top of the browser. If the problem persists, try "Refresh Firefox" in `about:support`.
