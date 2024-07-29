@@ -1,6 +1,6 @@
 # Firefox 주소창 자동 숨김 기능
 
-[ENGLISH](README_KO.md) | 한국어
+[ENGLISH](README.md) | 한국어
 
 이 userChrome.css 스니펫은 Firefox 브라우저의 주소창과 제목 표시줄을 자동으로 숨기는 기능을 제공합니다. 마우스를 위쪽으로 이동하면 요소들이 나타나고, 마우스를 다른 곳으로 이동하면 자동으로 숨겨집니다.
 
