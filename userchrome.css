@@ -1,5 +1,7 @@
 #navigator-toolbox:not(:hover) > #titlebar,
-#navigator-toolbox:not(:hover) > #nav-bar {
+#navigator-toolbox:has(#PersonalToolbar:hover) > #titlebar,
+#navigator-toolbox:not(:hover) > #nav-bar,
+#navigator-toolbox:has(#PersonalToolbar:hover) > #nav-bar {
   margin-top: -36px;
   opacity: 0;
 }
