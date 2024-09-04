@@ -19,10 +19,13 @@ This userChrome.css snippet provides a feature to automatically hide the address
 
 ```css
 #navigator-toolbox:not(:hover) > #titlebar,
-#navigator-toolbox:not(:hover) > #nav-bar {
+#navigator-toolbox:has(#PersonalToolbar:hover) > #titlebar,
+#navigator-toolbox:not(:hover) > #nav-bar,
+#navigator-toolbox:has(#PersonalToolbar:hover) > #nav-bar {
   margin-top: -36px;
   opacity: 0;
 }
+
 #titlebar, #nav-bar {
   transition: all 0.3s ease-in-out !important;
 }
